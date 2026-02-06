@@ -172,7 +172,7 @@ const InputManager = () => {
                         <tr key={item.id} className="hover:bg-slate-700/30 transition-colors group">
                           <td className="px-6 py-4">
                             <div className="flex items-center gap-3">
-                              <span className="font-medium text-slate-200 truncate max-w-[150px]">{item.site}</span>
+                              <span className="font-medium text-slate-200 truncate max-w-37.5">{item.site}</span>
                               <button onClick={() => copyToClipboard(item.site)} className="opacity-0 group-hover:opacity-100 p-1.5 hover:bg-slate-600 rounded-md transition-all text-indigo-400">
                                 <FaRegCopy size={14} />
                               </button>
@@ -181,7 +181,18 @@ const InputManager = () => {
                           <td className="px-6 py-4">
                             <div className="flex flex-col">
                               <span className="text-sm text-slate-300">{item.username}</span>
+                              <button onClick={() => copyToClipboard(item.username)} className="opacity-0 group-hover:opacity-100 p-1.5 hover:bg-slate-600 rounded-md transition-all text-indigo-400">
+                                <FaRegCopy size={14} />
+                              </button>
+                            </div>
+                          </td>
+                          <td className="px-6 py-4">
+                            <div className="flex flex-col">
+                              
                               <span className="text-xs text-slate-500">••••••••</span>
+                              <button onClick={() => copyToClipboard(item.password)} className="opacity-0 group-hover:opacity-100 p-1.5 hover:bg-slate-600 rounded-md transition-all text-indigo-400">
+                                <FaRegCopy size={14} />
+                              </button>
                             </div>
                           </td>
                           <td className="px-6 py-4">
