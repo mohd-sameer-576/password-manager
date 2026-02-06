@@ -89,8 +89,9 @@ const InputManager = () => {
         
         {/* Header Section */}
         <header className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent mb-2">
-            PassVault
+          <h1 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r bg-clip-text text-transparent mb-2">
+            <span className="text-green-400">&lt;</span>
+            <span className="text-gray-400">Password</span><span className="text-green-400">Office/&gt;</span>
           </h1>
           <p className="text-slate-400 font-medium">Securely manage your credentials locally.</p>
         </header>
@@ -163,7 +164,8 @@ const InputManager = () => {
                     <thead>
                       <tr className="bg-slate-900/50 border-b border-slate-700">
                         <th className="px-6 py-4 text-xs font-bold text-slate-400 uppercase">Site</th>
-                        <th className="px-6 py-4 text-xs font-bold text-slate-400 uppercase">Identity</th>
+                        <th className="px-6 py-4 text-xs font-bold text-slate-400 uppercase">Username</th>
+                        <th className="px-6 py-4 text-xs font-bold text-slate-400 uppercase">Passowrd</th>
                         <th className="px-6 py-4 text-xs font-bold text-slate-400 uppercase">Actions</th>
                       </tr>
                     </thead>
